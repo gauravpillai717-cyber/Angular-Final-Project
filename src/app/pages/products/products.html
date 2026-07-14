@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col" *ngFor="let item of data; trackBy: trackById">
+      <app-card [productdata]="item"></app-card>
+    </div>
+
+    <div class="col-12" *ngIf="!data || data.length === 0">
+      There are no items.
+    </div>
+  </div>
+</div>
+

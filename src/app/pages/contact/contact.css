@@ -1,0 +1,21 @@
+.form-control{
+
+    border-radius:10px;
+
+}
+
+.card{
+
+    border-radius:20px;
+
+    border:none;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    transition:0.3s;
+
+}

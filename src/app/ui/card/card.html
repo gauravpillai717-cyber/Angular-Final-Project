@@ -1,0 +1,40 @@
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="{{productdata.image}}"
+                     class="card-img-top product-img"
+                     alt="Wireless Headphones">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        {{productdata.title}}
+                    </h5>
+
+                    <h4 class="text-primary fw-bold">
+                        {{productdata.price}}
+                    </h4>
+
+                    <p class="card-text">
+                        {{productdata.description}}
+                    </p>
+
+                    <a
+                    class="btn btn-success w-100" [routerLink]="['/product-details',productdata.id]">
+                             View More
+                </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
